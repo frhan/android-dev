@@ -29,6 +29,7 @@ public class MainActivity extends SherlockFragmentActivity implements
  
     Activity activity = this;
     private ActionMode mActionMode;
+    
  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
