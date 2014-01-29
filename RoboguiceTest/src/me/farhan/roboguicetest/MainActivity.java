@@ -1,9 +1,12 @@
 package me.farhan.roboguicetest;
 
+import com.google.inject.Inject;
+
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectResource;
 import roboguice.inject.InjectView;
 import android.graphics.drawable.Drawable;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ImageView;
@@ -15,6 +18,9 @@ public class MainActivity extends RoboActivity {
 	@InjectView(R.id.imageView1) ImageView thumbnail;
 	@InjectResource(R.drawable.ic_launcher) Drawable icon;
 	@InjectResource(R.string.app_name) String myName;
+	  // system service
+	 @Inject LocationManager loc;
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
